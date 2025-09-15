@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-// import { ProductoListaComponent } from './producto-lista/producto-lista.component';
-// import { DashboardComponent } from './dashboard/dashboard.component';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'inventariosTintoSentido-app';

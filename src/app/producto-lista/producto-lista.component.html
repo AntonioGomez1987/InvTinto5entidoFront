@@ -3,6 +3,8 @@
       <h3>Sistema de Inventarios Tinto Sentido</h3>
     </div>
 
+
+
     <table class="table table-striped table-hover align-middle">
         <thead class="table-dark">
             <tr>
@@ -13,13 +15,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
-            </tr>
-            
+            @for(producto of productos; track producto.idProducto) {
+                <tr>
+                    <th scope="row">{{ producto.idProducto }}</th>
+                    <td>{{ producto.descripcionProducto }}</td>
+                    <td>{{ producto.precioProducto }}</td>
+                    <td>{{ producto.existenciaProducto }}</td>
+                </tr>
+            }            
         </tbody>
     </table>
 

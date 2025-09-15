@@ -19,4 +19,8 @@ export class DashboardComponent {
   goToClients() {
     this.router.navigate(['/cliente-lista']);
   }
+
+  goToProviders() {
+    this.router.navigate(['/proveedor-lista']);
+  }
 }
