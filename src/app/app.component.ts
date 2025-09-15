@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// import { ProductoListaComponent } from './producto-lista/producto-lista.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
