@@ -12,15 +12,15 @@ import { Router } from '@angular/router';
 export class DashboardComponent {
   constructor(private router: Router) {}
 
-  goToInventory() {
+  irAListaProductos() {
     this.router.navigate(['/producto-lista']); 
   }
 
-  goToClients() {
+  irAListaClientes() {
     this.router.navigate(['/cliente-lista']);
   }
 
-  goToProviders() {
+  irAListaProveedores() {
     this.router.navigate(['/proveedor-lista']);
   }
 }

@@ -20,4 +20,11 @@ export class ProductoService {
     return this.clienteHttp.post(this.urlBase, producto);
   }
 
+  obtenerProductoPorid(idProducto: number){
+    return this.clienteHttp.get<Producto>(`${this.urlBase}/${idProducto}`);
+  }
+
+  actualizarProducto(idproducto: number, producto: Producto){
+    return this.clienteHttp.put(`${this.urlBase}/${idproducto}`, producto);
+  }
 }
