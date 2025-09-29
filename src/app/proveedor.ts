@@ -8,5 +8,5 @@ export class Proveedor {
     correoProveedor : string;
     ciudadProveedor : string;
     sitioWebProveedor : string;
-    facturaProveedor : string;
+    // facturaProveedor : string;
 }
