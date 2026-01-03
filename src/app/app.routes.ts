@@ -6,6 +6,7 @@ import { ProveedorListaComponent } from './proveedor-lista/proveedor-lista.compo
 import { AgregarProductoComponent } from './agregar-producto/agregar-producto.component';
 import { EditarProductoComponent } from './editar-producto/editar-producto.component';
 import { AgregarProveedorComponent } from './agregar-proveedor/agregar-proveedor.component';
+import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component';
 
 
 export const routes: Routes = [
@@ -16,7 +17,8 @@ export const routes: Routes = [
     { path: 'editar-producto/:id', component: EditarProductoComponent },
     { path: 'cliente-lista', component: ClienteListaComponent },
     { path: 'proveedor-lista', component: ProveedorListaComponent },
-    { path: 'agregar-proveedor', component: AgregarProveedorComponent }
+    { path: 'agregar-proveedor', component: AgregarProveedorComponent },
+    { path: 'agregar-cliente', component: AgregarClienteComponent }
 ];
 
 
