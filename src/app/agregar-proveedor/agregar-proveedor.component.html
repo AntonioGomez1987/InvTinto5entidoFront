@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="text-center" style="margin: 30px">
+    <h3>Agregar Proveedor</h3>
+  </div>
+
+  <form class="row g-3 needs-validation" novalidate
+    (ngSubmit)="onSubmit()">
+    <div class="col-md-4">
+      <label for="nombreProveedor" class="form-label"
+        >Nombre del Proveedor</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="nombreProveedor"
+        name="nombreProveedor"
+        required
+        [(ngModel)]="proveedor.nombreProveedor"
+      />
+      <!-- <div class="valid-feedback">Looks good!</div> -->
+    </div>
+    <div class="col-md-4">
+      <label for="contactoProveedor" class="form-label">Contacto</label>
+      <input
+        type="text"
+        class="form-control"
+        id="contactoProveedor"
+        name="contactoProveedor"
+        required
+        [(ngModel)]="proveedor.contactoProveedor"
+      />
+      <!-- <div class="valid-feedback">Looks good!</div> -->
+    </div>
+    <div class="col-md-4">
+      <label for="nitProveedor" class="form-label">Nit</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="nitProveedor">#</span>
+        <input
+          type="number"
+          class="form-control"
+          id="nitProveedor"
+          name="nitProveedor"
+          aria-describedby="inputGroupPrepend"
+          required
+          [(ngModel)]="proveedor.nitProveedor"
+        />
+        <div class="invalid-feedback">Por favor ingresa un NIT válido.</div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="ciudadProveedor" class="form-label">Ciudad</label>
+      <input
+        type="text"
+        class="form-control"
+        id="ciudadProveedor"
+        name="ciudadProveedor"
+        required
+        [(ngModel)]="proveedor.ciudadProveedor" />
+      <div class="invalid-feedback">Por favor ingresa una ciudad válida.</div>
+    </div>
+    <div class="col-md-3">
+      <label for="telefonoProveedor" class="form-label">Teléfono</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">+57</span>
+        <input
+          type="text"
+          class="form-control"
+          id="telefonoProveedor"
+          name="telefonoProveedor"
+          required
+          [(ngModel)]="proveedor.telefonoProveedor"
+        />
+        <div class="invalid-feedback">
+          Por favor ingresa un teléfono válido.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="direccionProveedor" class="form-label">Dirección</label>
+      <input
+        type="text"
+        class="form-control"
+        id="direccionProveedor"
+        name="direccionProveedor"
+        required
+        [(ngModel)]="proveedor.direccionProveedor"
+      />
+        <div class="invalid-feedback">
+            Por favor ingresa una dirección válida.
+        </div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="sitioWebProveedor" class="form-label">Sitio web URL</label>
+      <div class="input-group">
+        <span class="input-group-text" id="sitioWebProveedor"
+          >https://ejemplo.com/productos/</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="sitioWebProveedor"
+          name="sitioWebProveedor"
+          aria-describedby="basic-addon3 basic-addon4"
+          [(ngModel)]="proveedor.sitioWebProveedor"
+          />
+      </div>
+      <div class="form-text" id="sitioWebProveedor">
+        Ingresa el sitio web del Proveedor.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="correoProveedor" class="form-label">Correo Electrónico</label>
+      <input
+        type="text"
+        class="form-control"
+        id="correoProveedor"
+        name="correoProveedor"
+        required
+        [(ngModel)]="proveedor.correoProveedor"
+      />
+      <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+    </div>
+
+    <div class="text-center">
+      <button class="btn btn-success btn-sm me-3" type="submit">Agregar Proveedor</button>
+      <a href="/" class="btn btn-warning btn-sm">Regresar</a>
+    </div>
+
+  </form>
+</div>
