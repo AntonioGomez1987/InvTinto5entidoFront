@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Proveedor } from '../proveedor';
 import { ProveedorService } from '../proveedor.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-proveedor-lista',
@@ -13,6 +14,7 @@ export class ProveedorListaComponent {
   proveedores!: Proveedor[];
 
   private proveedorServicio = inject(ProveedorService);
+  private enrutador = inject(Router);
   
   // Cargamos los proveedores 
   ngOnInit() {
@@ -31,5 +33,8 @@ export class ProveedorListaComponent {
       });
   }
 
-  
+  editarProveedor(idProveedor: number){
+    // Navegamos a la ruta de edición del proveedor
+    this.enrutador.navigate(['editar-proveedor', idProveedor]);
+  }
 }
